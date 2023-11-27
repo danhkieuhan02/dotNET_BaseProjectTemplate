@@ -13,6 +13,7 @@ namespace App.Data
 	public class WebAppDbContext : DbContext
 	{
 		public DbSet<AppRole> AppPolicies { get; set; }
+		public DbSet<AppCategory> AppCategories { get; set; }
 		public DbSet<AppRolePermission> AppRolePermissions { get; set; }
 		public DbSet<AppUser> AppUsers { get; set; }
 		public DbSet<MstPermission> MstPermissions { get; set; }
