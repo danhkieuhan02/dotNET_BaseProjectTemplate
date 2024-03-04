@@ -27,12 +27,14 @@ namespace App.Data
 			modelBuilder.ApplyConfiguration(new AppRoleConfig());
 			modelBuilder.ApplyConfiguration(new AppRolePermissionConfig());
 			modelBuilder.ApplyConfiguration(new MstPermissionConfig());
+			modelBuilder.ApplyCongiguration(new AppCategoryConfig());
 
 			// Tạo dữ liệu
 			modelBuilder.Entity<MstPermission>().SeedData();
 			modelBuilder.Entity<AppRole>().SeedData();
 			modelBuilder.Entity<AppUser>().SeedData();
 			modelBuilder.Entity<AppRolePermission>().SeedData();
+			modelBuilder.Entity<AppCategory>().SeedData();
 		}
 	}
 }
